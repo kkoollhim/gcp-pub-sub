@@ -1,7 +1,7 @@
 FROM node:12.6.0-alpine
 
 COPY dist /app/dist
-# COPY node_modules /app/node_modules
+COPY node_modules /app/node_modules
 
 WORKDIR /app
 
