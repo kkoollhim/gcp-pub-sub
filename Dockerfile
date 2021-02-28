@@ -5,6 +5,6 @@ COPY dist /app/dist
 
 WORKDIR /app
 
-EXPOSE 8080
+# EXPOSE 8080
 
 CMD node /app/dist/main.js
