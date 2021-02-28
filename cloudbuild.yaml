@@ -9,7 +9,7 @@ steps:
     - '-c'
     - |
       npm install
-      npm run build
+      npm run build -c
 
 #Building Image
 - name: 'gcr.io/cloud-builders/gcloud' 
@@ -38,7 +38,7 @@ substitutions:
     _REGION: us-central1
     # _GCS_BUCKET: ccn-build
     #Developers only change
-    _VERSION: v01
+    _VERSION: v02
     
 # logsBucket: 'gs://$_GCS_BUCKET/cloud_build_downtime_alert_logs'
 timeout: 1500s
