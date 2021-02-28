@@ -5,6 +5,6 @@ COPY node_modules /app/node_modules
 
 WORKDIR /app
 
-# EXPOSE 8080
+EXPOSE 8080
 
 CMD node /app/dist/main.js
