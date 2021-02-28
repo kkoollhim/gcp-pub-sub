@@ -15,7 +15,7 @@ export class AppService {
 
   async publishData() {
     const dataBuffer = Buffer.from(JSON.stringify(this.data));
-    const messageId =  await pubSubClient.topic("").publish(dataBuffer); 
+    const messageId =  await pubSubClient.topic("pubsub-demo").publish(dataBuffer); 
     console.log(`Message ${messageId} published.`);
   }
 }
